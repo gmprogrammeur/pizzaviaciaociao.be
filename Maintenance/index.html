@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109343978-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109343978-1');
+	</script>
+
+	<title>Pizzavia Ciao Ciao</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Pizzavia Ciao Ciao, pizzeria, 20 ans d'expériences, 54, Av Princesse Elisabeth, Schaerbeek, Bruxelles, ouvert du mardi au samedi, sur place, a emporter, livraison, Tel 02 245 68 69.">
+	<meta name="keywords" content="Pizzeria, pizzeria, Pizza, pizza, Pizzas, pizzas, Pizzavia, pizzavia, Ciao Ciao, ciao ciao, Princesse Elisabeth, Schaerbeek, schaerbeek, Bruxelles, bruxelles, Livraison, Réservation, Margharita, 4 Fromaggi, Calzone">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+	body, html {height: 100%}
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+	.menu {display: none}
+	.bgimg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("Images/pizhea.jpg");
+		min-height: 100%;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+
+	  <div class="w3-bar w3-xlarge w3-black" id="myNavbar">
+
+		<a href="#" class="w3-bar-item w3-button"><i class="fa fa-home w3-hide-small"></i> ACCUEIL</a>
+		<a href="#menu" class="w3-bar-item w3-button"><i class="fa fa-clone w3-hide-small"></i> MENU</a>
+		<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-question w3-hide-small"></i> INFO</a>
+		<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope w3-hide-small"></i> CONTACT</a>
+		<a href="nl.html" class="w3-bar-item w3-button">NL</a>
+		<a class="w3-bar-item w3-right w3-hide-small"><span class="w3-text-green">20</span> ANS <span class="w3-text-red">D'EXPERIENCES</span></a>
+
+	  </div>
+
+	</div>
+  
+	<!-- Header with image -->
+	<header class="bgimg w3-display-container" id="home">
+
+	  <div class="w3-display-middle w3-center">
+
+		<img src="Images/cicilo.png" style="width: 300px;" alt="Ciao Ciao">
+		<p style="margin-top: 50px;"><a href="#menu" class="w3-button w3-xxlarge w3-green w3-hover-red"><i class="fa fa-pie-chart w3-hide-small"></i> PIZZAS</a></p>
+
+	  </div>
+
+	  <div class="w3-display-bottommiddle w3-padding w3-hide-small w3-wide" style="margin-bottom: 50px;">
+
+		<span class="w3-tag w3-xlarge w3-text-white">SUR PLACE | A EMPORTER | LIVRAISON</span>
+
+	  </div>
+
+	</header>
+
+	<!-- Article -->
+	<div class="w3-red">
+
+		<div class="w3-content w3-container w3-padding-20 w3-xxlarge w3-text-black">
+
+			<h3 class="w3-center w3-xxlarge" style="margin: 20px;"><i class="fa fa-eur w3-hover-text-blue"></i> PROMOTION</h3>
+
+			<p class="w3-center" style="margin: 20px;"><em>Bientôt une promotion !</em></p>
+
+		</div>
+
+	</div>
+
+	<!-- Menu Container -->
+	<div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+
+	  <div class="w3-content">
+	  
+		<h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><i class="fa fa-clone w3-hover-text-blue"></i> MENU</h1>
+
+		<div class="w3-row w3-center w3-border w3-border-dark-grey w3-white" style="overflow: hidden;">
+
+		  <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+			<div class="w3-col s4 tablink w3-padding-large w3-hover-red"><i class="fa fa-pie-chart w3-hide-small"></i> Pizzas</div>
+		  </a>
+		  <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+			<div class="w3-col s4 tablink w3-padding-large w3-hover-red"><i class="fa fa-cutlery w3-hide-small"></i> Plats</div>
+		  </a>
+		  <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+			<div class="w3-col s4 tablink w3-padding-large w3-hover-red"><i class="fa fa-glass w3-hide-small"></i> Boissons</div>
+		  </a>
+
+		</div>
+
+		<div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+
+		  <h1 class="w3-text-red"><b>Pizzas</b></h1>
+		  <hr>
+
+		  <h1><b>Marinara <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 5.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"> <span class="w3-text-red">L</span> 8.50<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Ail, basilic.</p>
+		  <hr>
+	   
+		  <h1><b>Margharita <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 6.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 9.50<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella.</p>
+		  <hr>
+		  
+		  <h1><b>Casarecce <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Oignons, Ail, Basilic.</p>
+		  <hr>
+
+		  <h1><b>Végétal <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Olives, Poivrons, Champignons, Artichauts, Oignons.</p>
+		  <hr>
+
+		  <h1><b>Tropical <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Jambon, Ananas.</p>
+		  <hr>
+
+		  <h1><b>Napoli <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Anchois, Olives, câpres.</p>
+		  <hr>
+
+		  <h1><b>Siciliana <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10.50<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-red w3-round"><i class="fa fa-thermometer w3-hide-small w3-text-black w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Poivrons, Salami Piquant.</p>
+		  <hr>
+
+		  <h1><b>Calzone <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Jambon, Champignons, Oeufs.</p>
+		  <hr>
+
+		  <h1><b>Capricciosa <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Jambon, Champigons, Artichauts, Olives.</p>
+		  <hr>
+
+		  <h1><b>4 Fromaggi <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 7.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 10.50<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Provolone, Gorgonzola, Parmesan.</p>
+		  <hr>
+
+		  <h1><b>Marta <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 8.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 11.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Oignons, Thon, Poivrons.</p>
+		  <hr>
+
+		  <h1><b>Tutti frutti <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 9<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 12<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Fruits de mer, Ail.</p>
+		  <hr>
+
+		  <h1><b>Fantasia <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 9<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 12<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Jambon de Parme, Artichauts.</p>
+		  <hr>
+
+		  <h1><b>Melanzane <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 9<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 12<i class="fa fa-eur w3-small"></i></span><span class="w3-tag w3-green w3-text-black w3-round"><i class="fa fa-leaf w3-hide-small w3-hover-text-blue"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Aubergines, Gorgonzola, Brocoli.</p>
+		  <hr>
+
+		  <h1><b>Campagnola <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 9<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 12<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Lardons, Oignons, Brocoli, Oeuf, Poivrons.</p>
+		  <hr>
+
+		  <h1><b>Salmone <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 10.50<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 13.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Saumon, Ricota, Oeufs Mimosa.</p>
+		  <hr>
+
+		  <h1><b>Mediterranea <span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">M</span> 12<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">L</span> 15<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomates, Mozzarella, Scampi, Courgettes.</p>
+		  <hr>
+
+		  <h1 class="w3-text-red"><b>Suppléments</b></h1>
+		  <hr>
+
+		  <h1><b>Viandes <span class="w3-right w3-tag w3-light-grey w3-round">2<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Poissons <span class="w3-right w3-tag w3-light-grey w3-round">3<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Fromages <span class="w3-right w3-tag w3-light-grey w3-round">1<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Légumes <span class="w3-right w3-tag w3-light-grey w3-round">0.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+
+		</div>
+
+		<div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+
+		  <h1 class="w3-text-red"><b>Entrées</b></h1>
+		  <hr>
+
+		  <h1><b>Salade caprese<span class="w3-right w3-tag w3-light-grey w3-round">8.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tomate, Mozzarella, Salade, Basilic, Huile d’olive, Origan.</p>
+		  <hr>
+
+		  <h1><b>Antipasti<span class="w3-right w3-tag w3-light-grey w3-round">9.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Jambon de Parme, Provolone, Salade.</p>
+		  <hr>
+
+		  <h1><b>Arangino<span class="w3-right w3-tag w3-light-grey w3-round">5<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Boule de riz farcie, Mozzarella, Bologanaise, Petits pois.</p>
+		  <hr>
+
+		  <h1 class="w3-text-red"><b>Plats</b></h1>
+		  <hr>
+
+		  <h1><b>Plats journaliers<span class="w3-right w3-tag w3-light-grey w3-round">xx.xx<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Ingrédient journaliers.</p>
+		  <hr>
+
+		  <h1 class="w3-text-red"><b>Desserts</b></h1>
+		  <hr>
+
+		  <h1><b>Glaces<span class="w3-right w3-tag w3-light-grey w3-round">4.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Tarfufo(chocolat), Affogato(vanille, cerise).</p>
+		  <hr>
+
+		  <h1><b>Tiramissu<span class="w3-right w3-tag w3-light-grey w3-round">3<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Mousse au chocolat<span class="w3-right w3-tag w3-light-grey w3-round">3<i class="fa fa-eur w3-small"></i></span></b></h1>
+
+		</div>
+
+
+		<div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+
+		  <h1 class="w3-text-red"><b>Froide</b></h1>
+		  <hr>
+
+		  <h1><b>Coca-Cola<span class="w3-right w3-tag w3-light-grey w3-round">1.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Light, Zero.</p>
+		  <hr>
+
+		  <h1><b>Fanta orange<span class="w3-right w3-tag w3-light-grey w3-round">1.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Minute Maid orange<span class="w3-right w3-tag w3-light-grey w3-round">1.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Lipton Ice Tea<span class="w3-right w3-tag w3-light-grey w3-round">1.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Eau plate<span class="w3-right w3-tag w3-light-grey w3-round">1.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Eau pétillante<span class="w3-right w3-tag w3-light-grey w3-round">1.80<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>San Benedetto<span class="w3-right w3-tag w3-light-grey w3-round">1.80<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Citron, Pêche, Thé vert.</p>
+		  <hr>
+
+		  <h1 class="w3-text-red"><b>Chaude</b></h1>
+		  <hr>
+
+		  <h1><b>Café<span class="w3-right w3-tag w3-light-grey w3-round">2<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Expresso<span class="w3-right w3-tag w3-light-grey w3-round">2<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Cappucino<span class="w3-right w3-tag w3-light-grey w3-round">2.50<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Thé<span class="w3-right w3-tag w3-light-grey w3-round">2<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1 class="w3-text-red"><b>Alcoolisé</b></h1>
+		  <hr>
+
+		  <h1><b>Bière<span class="w3-right w3-tag w3-light-grey w3-round">1.60<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <hr>
+
+		  <h1><b>Vin du patron
+
+		  	<span class="w3-right w3-tag w3-light-grey w3-round">
+
+		  		<span class="w3-text-red">1V</span> 2<i class="fa fa-eur w3-small"></i>
+
+		  	</span><span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right">
+
+		  		<span class="w3-text-red">1/4L</span> 4<i class="fa fa-eur w3-small"></i>
+
+		  	</span><span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right">
+
+		  		<span class="w3-text-red">1/2L</span> 8<i class="fa fa-eur w3-small"></i>
+
+		  	</span><span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right">
+
+		  		<span class="w3-text-red">1L</span> 16<i class="fa fa-eur w3-small"></i>
+
+		  	</span>
+
+		  </b></h1>
+
+		  <p class="w3-text-grey" style="margin: 0;">Rouge, Blanc, Rosé.</p>
+		  <hr>
+
+		  <h1><b>Lambrusco<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">750ML</span> 10<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge, Blanc, Rosé.</p>
+		  <hr>
+
+		  <h1><b>Bardolino<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">375ML</span> 8<i class="fa fa-eur w3-small"></i></span> <span class="w3-right w3-tag w3-light-grey w3-round w3-margin-right"><span class="w3-text-red">750ML</span> 15<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge.</p>
+		  <hr>
+
+		  <h1><b>Frappato<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">750ML</span> 15<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge.</p>
+		  <hr>
+
+		  <h1><b>Chianti Poggio<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">750ML</span> 15<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge.</p>
+		  <hr>
+
+		  <h1><b>Nero d’Avola<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">750ML</span> 15<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge.</p>
+		  <hr>
+
+		  <h1><b>Montepulciano<span class="w3-right w3-tag w3-light-grey w3-round"><span class="w3-text-red">750ML</span> 13<i class="fa fa-eur w3-small"></i></span></b></h1>
+		  <p class="w3-text-grey" style="margin: 0;">Rouge, Blanc, Rosé.</p>
+
+		</div>
+
+		<br>
+
+	  </div>
+
+	</div>
+
+	<!-- About Container -->
+	<div class="w3-container w3-padding-64 w3-orange w3-xxlarge" id="about">
+
+	  <div class="w3-content">
+
+		<h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><i class="fa fa-question w3-hover-text-blue"></i> INFO</h1>
+
+		<p><em>Pizzavia Ciao Ciao, plus de 20ans d'expériences, dans la grastonomie italienne, Des pizzas traditionnelles preparé avec des bon ingrédients.</em></p>
+
+		<p>Une salle style méditerranée de 28 places.<img src="Images/cicilope.png" style="width:75px; margin: 0 24px 24px 0;" class="w3-right w3-hide-small" alt="Ciao Ciao"></p>
+
+		<img src="Images/pipcici.JPG" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+
+		<h1><i class="fa fa-clock-o w3-hover-text-blue"></i> HEURES D'OUVERTURE</h1>
+		
+		<div class="w3-row">
+
+		  <div class="w3-col s6">
+
+			<p>Dimanche Lundi FERMEE</p>
+			<p>Mardi 11h30-14h00 | 15h30-22h30</p>
+			<p>Mercredi 11h30-14h00 | 15h30-22h30</p>
+
+		  </div>
+
+		  <div class="w3-col s6 w3-hide-small">
+
+			<p>Jeudi 11h30-14h00 | 15h30-22h30</p>
+			<p>Vendredi 11h30-14h00 | 15h30-22h30</p>
+			<p>Samedi 15h30-23h00</p>
+
+		  </div>
+
+		</div>
+
+		  <div class="w3-col s6 w3-hide-medium w3-hide-large">
+
+			<p>Jeudi 11h30-14h00 | 15h30-22h30</p>
+			<p>Vendredi 11h30-14h00 | 15h30-22h30</p>
+			<p>Samedi 15h30-23h00</p>
+
+		  </div>
+		
+	  </div>
+
+	</div>
+
+	<!-- Container (Contact Section) -->
+	<div class="w3-white w3-text-black">
+
+	  <div class="w3-content w3-container w3-padding-64" id="contact">
+
+		<h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><i class="fa fa-envelope w3-hover-text-blue"></i> CONTACT</h1>
+		<p class="w3-center w3-xxlarge"><em><i class="fa fa-motorcycle w3-hover-text-blue"></i> Livraison<br>Bientôt un service de livraison !</em></p>
+
+		<div class="w3-row w3-padding-32 w3-section">
+
+		  <div class="w3-col m6 w3-container">
+
+			<!-- Add Google Maps -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.7338684022975!2d4.374939151074995!3d50.8731264794355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c31189c47781%3A0x967fd20875e0de2b!2sAvenue+Princesse+Elisabeth+54%2C+1030+Schaerbeek%2C+Belgium!5e0!3m2!1sen!2sus!4v1507475836218" width="auto" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+		  </div>
+
+		  <div class="w3-col m6">
+
+			<div class="w3-margin-bottom w3-xxlarge">
+
+			  <p style="margin-top: 10px;"><i class="fa fa-cutlery fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> Réservation <i class="fa fa-motorcycle fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> Livraison<br>
+			  <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> 02 245 68 69<hr>
+			  <i class="fa fa-question fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> Renseignement<br>
+			  <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> ciaociao@Skynet.be<hr>
+			  <i class="fa fa-home fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> Adresse<br>
+			  <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right w3-hover-text-blue"></i> 54, Av Princesse Elisabeth, Schaerbeek</p>
+
+			</div>
+
+		  </div>
+
+		</div>
+
+	  </div>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-64 w3-xlarge">
+
+		<a href="#home" class="w3-button w3-dark-grey w3-hover-grey" style="margin-top: 24px;"><i class="fa fa-home w3-hide-small"></i> ACCUEIL</a>
+
+		<div class="w3-section">
+
+			<p><i class="fa fa-laptop w3-hover-text-blue"></i> <i class="fa fa-tablet w3-hover-text-blue"></i> <i class="fa fa-mobile w3-hover-text-blue"></i></p>
+			<p>Ciao Ciao <i class="fa fa-copyright w3-hover-text-blue"></i> 2017</p>
+
+		</div>
+
+	</footer>
+
+	<script>
+
+	// Tabbed Menu
+	function openMenu(evt, menuName) {
+	  var i, x, tablinks;
+	  x = document.getElementsByClassName("menu");
+	  for (i = 0; i < x.length; i++) {
+		 x[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < x.length; i++) {
+		 tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+	  }
+	  document.getElementById(menuName).style.display = "block";
+	  evt.currentTarget.firstElementChild.className += " w3-green";
+	}
+	document.getElementById("myLink").click();
+
+	</script>
+
+</body>
+</html>
